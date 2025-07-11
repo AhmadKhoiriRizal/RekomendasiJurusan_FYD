@@ -35,6 +35,9 @@
         <activity
             android:name=".EnsiklopediaJurusanActivity"
             android:exported="false" />
+        <activity
+            android:name=".PetaKarierActivity"
+            android:exported="false" />
         <activity android:name=".LoginActivity"
             android:exported="false"/>
         <activity android:name=".RegisterActivity"

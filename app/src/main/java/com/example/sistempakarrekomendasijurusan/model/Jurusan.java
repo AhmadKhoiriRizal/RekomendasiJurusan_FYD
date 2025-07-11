@@ -1,19 +1,17 @@
 package com.example.sistempakarrekomendasijurusan.model;
 
+import java.util.List;
+
 public class Jurusan {
-    private String nama;
-    private String kategori;
+    public String nama;
+    public List<String> akademik;
+    public List<String> industri;
+    public List<String> alternatif;
 
-    public Jurusan(String nama, String kategori) {
+    public Jurusan(String nama, List<String> akademik, List<String> industri, List<String> alternatif) {
         this.nama = nama;
-        this.kategori = kategori;
-    }
-
-    public String getNama() {
-        return nama;
-    }
-
-    public String getKategori() {
-        return kategori;
+        this.akademik = akademik;
+        this.industri = industri;
+        this.alternatif = alternatif;
     }
 }

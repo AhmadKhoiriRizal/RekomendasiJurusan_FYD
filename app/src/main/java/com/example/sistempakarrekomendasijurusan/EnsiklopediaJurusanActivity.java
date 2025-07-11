@@ -44,44 +44,44 @@ public class EnsiklopediaJurusanActivity extends AppCompatActivity {
         kategoriList.add("🧾 Lain-lain & Interdisipliner");
 
         dataMap.put("🧪 Sains & STEM", Arrays.asList(
-                "Biologi", "Kimia", "Fisika", "Matematika & Statistika", "Ilmu Lingkungan",
-                "Geologi", "Astronomi / Meteorologi"));
+                "• Biologi", "• Kimia", "• Fisika", "• Matematika & Statistika", "• Ilmu Lingkungan",
+                "• Geologi", "• Astronomi / Meteorologi"));
 
         dataMap.put("🛠️ Teknologi & Teknik", Arrays.asList(
-                "Teknik Mesin", "Teknik Elektro", "Teknik Sipil", "Teknik Kimia", "Teknik Industri",
-                "Teknik Lingkungan", "Teknik Komputer", "Ilmu Komputer", "Teknik Biomedis",
-                "Bioteknologi", "Teknik Otomotif", "Arsitektur", "Rekayasa Perangkat Lunak"));
+                "• Teknik Mesin", "• Teknik Elektro", "• Teknik Sipil", "• Teknik Kimia", "• Teknik Industri",
+                "• Teknik Lingkungan", "• Teknik Komputer", "• Ilmu Komputer", "• Teknik Biomedis",
+                "• Bioteknologi", "• Teknik Otomotif", "• Arsitektur", "• Rekayasa Perangkat Lunak"));
 
         dataMap.put("🧩 Bisnis & Manajemen", Arrays.asList(
-                "Administrasi Bisnis", "Akuntansi", "Keuangan", "Pemasaran",
-                "Sumber Daya Manusia", "Manajemen Operasi", "Manajemen Hotel & Pariwisata",
-                "Kewirausahaan / Business Analytics"));
+                "• Administrasi Bisnis", "• Akuntansi", "• Keuangan", "• Pemasaran",
+                "• Sumber Daya Manusia", "• Manajemen Operasi", "• Manajemen Hotel & Pariwisata",
+                "• Kewirausahaan / Business Analytics"));
 
         dataMap.put("💻 Komunikasi & Media", Arrays.asList(
-                "Ilmu Komunikasi", "Jurnalistik", "Public Relations", "Periklanan", "Penyiaran Radio & TV"));
+                "• Ilmu Komunikasi", "• Jurnalistik", "• Public Relations", "• Periklanan", "• Penyiaran Radio & TV"));
 
         dataMap.put("🎭 Seni & Desain", Arrays.asList(
-                "Seni Rupa", "Musik", "Teater & Drama", "Film & Produksi Video",
-                "Animasi & Multimedia", "Desain Grafis", "Desain Interior", "Fashion"));
+                "• Seni Rupa", "• Musik", "• Teater & Drama", "• Film & Produksi Video",
+                "• Animasi & Multimedia", "• Desain Grafis", "• Desain Interior", "• Fashion"));
 
         dataMap.put("🏥 Kesehatan & Kedokteran", Arrays.asList(
-                "Keperawatan", "Farmasi", "Kedokteran", "Kedokteran Gigi",
-                "Fisioterapi", "Terapis Okupasi", "Teknologi Laboratorium Medis",
-                "Kesehatan Masyarakat", "Nutrisi"));
+                "• Keperawatan", "• Farmasi", "• Kedokteran", "• Kedokteran Gigi",
+                "• Fisioterapi", "• Terapis Okupasi", "• Teknologi Laboratorium Medis",
+                "• Kesehatan Masyarakat", "• Nutrisi"));
 
         dataMap.put("👥 Ilmu Sosial & Humaniora", Arrays.asList(
-                "Psikologi", "Sosiologi", "Antropologi", "Ekonomi", "Ilmu Politik",
-                "Hubungan Internasional", "Sejarah", "Pendidikan", "Studi Gender & Etnis",
-                "Filsafat & Agama"));
+                "• Psikologi", "• Sosiologi", "• Antropologi", "• Ekonomi", "• Ilmu Politik",
+                "• Hubungan Internasional", "• Sejarah", "• Pendidikan", "• Studi Gender & Etnis",
+                "• Filsafat & Agama"));
 
         dataMap.put("🏛️ Hukum & Kriminologi", Arrays.asList(
-                "Hukum", "Kriminologi", "Forensik", "Penegakan Hukum"));
+                "• Hukum", "• Kriminologi", "• Forensik", "• Penegakan Hukum"));
 
         dataMap.put("🌿 Pertanian & SDA", Arrays.asList(
-                "Pertanian", "Agronomi & Hortikultura", "Peternakan & Perikanan", "Konservasi Sumber Daya Alam"));
+                "• Pertanian", "• Agronomi & Hortikultura", "• Peternakan & Perikanan", "• Konservasi Sumber Daya Alam"));
 
         dataMap.put("🧾 Lain-lain & Interdisipliner", Arrays.asList(
-                "Pendidikan", "Bahasa & Sastra", "Studi Wilayah", "Studi Gender & Keluarga",
-                "Rekreasi & Manajemen Olahraga", "Teknologi Pendidikan", "Teknologi Web"));
+                "• Pendidikan", "• Bahasa & Sastra", "• Studi Wilayah", "• Studi Gender & Keluarga",
+                "• Rekreasi & Manajemen Olahraga", "• Teknologi Pendidikan", "• Teknologi Web"));
     }
 }

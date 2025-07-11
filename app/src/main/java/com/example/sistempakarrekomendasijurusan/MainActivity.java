@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         cardKuisMinatBakat.setOnClickListener(view -> {
-            Toast.makeText(this, "Navigasi ke Kuis Minat & Bakat", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Segera Datang Kuis Minat & Bakat", Toast.LENGTH_SHORT).show();
             // startActivity(new Intent(this, KuisMinatBakatActivity.class));
         });
 
@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         cardPetaKarier.setOnClickListener(view -> {
             Toast.makeText(this, "Navigasi ke Peta Karier", Toast.LENGTH_SHORT).show();
-            // startActivity(new Intent(this, PetaKarierActivity.class));
+             startActivity(new Intent(this, PetaKarierActivity.class));
         });
     }
 }
