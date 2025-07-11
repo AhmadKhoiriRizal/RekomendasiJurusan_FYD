@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!-- Template Pertanyaan -->
+
+    <TextView
+        android:text="1. Apakah kamu suka eksperimen atau penelitian?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/q1_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ya" />
+        <RadioButton
+            android:id="@+id/q1_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak" />
+    </RadioGroup>
+
+    <TextView
+        android:text="2. Apakah kamu tertarik pada teknologi dan cara kerja mesin?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/q2_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ya" />
+        <RadioButton
+            android:id="@+id/q2_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak" />
+    </RadioGroup>
+
+    <TextView
+        android:text="3. Apakah kamu suka mengelola uang atau menjalankan bisnis?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup3"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/q3_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ya" />
+        <RadioButton
+            android:id="@+id/q3_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak" />
+    </RadioGroup>
+
+    <TextView
+        android:text="4. Apakah kamu suka menulis, berbicara, atau membuat konten media?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup4"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/q4_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ya" />
+        <RadioButton
+            android:id="@+id/q4_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak" />
+    </RadioGroup>
+
+    <TextView
+        android:text="5. Apakah kamu suka menggambar, bermain musik, atau membuat karya kreatif?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup5"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/q5_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ya" />
+        <RadioButton
+            android:id="@+id/q5_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak" />
+    </RadioGroup>
+
+    <TextView
+        android:text="6. Apakah kamu peduli dengan kesehatan orang lain?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup6"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/q6_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ya" />
+        <RadioButton
+            android:id="@+id/q6_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak" />
+    </RadioGroup>
+
+    <TextView
+        android:text="7. Apakah kamu suka memahami perilaku manusia dan masyarakat?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup7"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/q7_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ya" />
+        <RadioButton
+            android:id="@+id/q7_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak" />
+    </RadioGroup>
+
+    <TextView
+        android:text="8. Apakah kamu tertarik dengan hukum, keadilan, atau penyelidikan?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup8"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/q8_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ya" />
+        <RadioButton
+            android:id="@+id/q8_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak" />
+    </RadioGroup>
+
+    <TextView
+        android:text="9. Apakah kamu suka dengan alam, tanaman, atau lingkungan hidup?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup9"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/q9_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ya" />
+        <RadioButton
+            android:id="@+id/q9_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak" />
+    </RadioGroup>
+
+    <TextView
+        android:text="10. Apakah kamu suka banyak hal dan sulit memilih satu?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup10"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/q10_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ya" />
+        <RadioButton
+            android:id="@+id/q10_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tidak" />
+    </RadioGroup>
+
+    <TextView
+        android:text="11. Apakah kamu suka memimpin proyek atau tim?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup11"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Ya"
+            android:id="@+id/q11_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="Tidak"
+            android:id="@+id/q11_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <TextView
+        android:text="12. Apakah kamu suka mengedit video atau membuat konten visual?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup12"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Ya"
+            android:id="@+id/q12_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="Tidak"
+            android:id="@+id/q12_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <TextView
+        android:text="13. Apakah kamu tertarik pada dunia kesehatan mental?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup13"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Ya"
+            android:id="@+id/q13_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="Tidak"
+            android:id="@+id/q13_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <TextView
+        android:text="14. Apakah kamu suka merancang atau membangun sesuatu?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup14"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Ya"
+            android:id="@+id/q14_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="Tidak"
+            android:id="@+id/q14_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <TextView
+        android:text="15. Apakah kamu suka meneliti hukum atau peraturan?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup15"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Ya"
+            android:id="@+id/q15_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="Tidak"
+            android:id="@+id/q15_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <TextView
+        android:text="16. Apakah kamu tertarik dengan teknologi pertanian atau makanan?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup16"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Ya"
+            android:id="@+id/q16_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="Tidak"
+            android:id="@+id/q16_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <TextView
+        android:text="17. Apakah kamu ingin mengajar atau menjadi dosen/guru?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup17"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Ya"
+            android:id="@+id/q17_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="Tidak"
+            android:id="@+id/q17_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <TextView
+        android:text="18. Apakah kamu suka hal-hal berbau teknologi komputer dan software?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup18"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Ya"
+            android:id="@+id/q18_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="Tidak"
+            android:id="@+id/q18_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <TextView
+        android:text="19. Apakah kamu ingin bekerja di pemerintahan atau sektor publik?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup19"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Ya"
+            android:id="@+id/q19_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="Tidak"
+            android:id="@+id/q19_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <TextView
+        android:text="20. Apakah kamu suka dengan pekerjaan yang fleksibel dan beragam bidang?"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <RadioGroup
+        android:id="@+id/radioGroup20"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="Ya"
+            android:id="@+id/q20_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:text="Tidak"
+            android:id="@+id/q20_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+        <!-- BUTTONS -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="16dp"
+            android:weightSum="2">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonReset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="8dp"
+                android:text="Ulangi Jawaban"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonSubmit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@android:color/white"
+                android:layout_marginStart="8dp"
+                android:text="Lihat Rekomendasi"
+                style="@style/Widget.MaterialComponents.Button" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

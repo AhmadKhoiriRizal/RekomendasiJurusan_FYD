@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8E6D9"
+    tools:context=".MainActivity">
+
+    <!-- Background Image Header -->
+    <RelativeLayout
+        android:id="@+id/header_background"
+        android:layout_width="match_parent"
+        android:layout_height="275dp"
+        android:background="#284538">
+
+        <!-- Background image with partial overlay -->
+        <ImageView
+            android:id="@+id/imageBackground"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:alpha="0.55"
+            android:background="@drawable/mainbg"
+            android:contentDescription="Background image with golf balls and green tone" />
+
+        <!-- Toolbar row with hamburger and title -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <TextView
+                android:id="@+id/header_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find Your Dream"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:layout_marginStart="0dp"
+                android:fontFamily="sans-serif-medium" />
+
+        </LinearLayout>
+
+
+        <!-- Main Title -->
+        <TextView
+            android:id="@+id/mainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rekomendasi Jurusan"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_below="@id/header_background"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Learn More with underline -->
+        <TextView
+            android:id="@+id/learnMore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Temukan jurusan impianmu"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp"
+            android:layout_below="@id/mainTitle"
+            android:layout_marginStart="16dp"
+            android:paddingEnd="16dp"
+            android:fontFamily="sans-serif-medium" />
+
+        <!-- Underline bar below LEARN MORE -->
+        <View
+            android:layout_width="200dp"
+            android:layout_height="2dp"
+            android:background="@color/colorPrimary"
+            android:layout_below="@id/learnMore"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="16dp" />
+
+    </RelativeLayout>
+
+    <!-- Content Card Grid -->
+    <GridLayout
+        android:id="@+id/cardGrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="230dp"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:alignmentMode="alignMargins"
+        android:columnOrderPreserved="false"
+        android:rowOrderPreserved="false"
+        android:useDefaultMargins="true">
+
+        <!-- Card Item Template -->
+        <!-- 1. Bidang Studi -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardBidangStudi"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#E9F0ED"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/study_university"
+                    android:contentDescription="Mobile CRM icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:breakStrategy="balanced"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Rekomendasi Bidang Studi"
+                    android:textColor="#94A69E"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 2. Rekomendasi Jurusan -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardRekomendasiJurusan"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#8BC34A"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:tint="#2B5523"
+                    android:src="@drawable/good_job_hand"
+                    android:contentDescription="Tee Time icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:breakStrategy="balanced"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Rekomendasi Jurusan"
+                    android:textColor="#94A69E"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 3. Kuis Minat Bakat -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardKuisMinatBakat"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#E9F0ED"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/lamp_light"
+                    android:contentDescription="Directory icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:breakStrategy="balanced"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Kuis Minat &amp; Bakat"
+                    android:textColor="#94A69E"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 4. Jurusan Favorit -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardKampusFavorit"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#E9F0ED"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/favorite_chart"
+                    android:contentDescription="Calendar icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:breakStrategy="balanced"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Kampus Favorit"
+                    android:textColor="#94A69E"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 5. Ensiklopedia Jurusan -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardEnsiklopediaJurusan"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#E9F0ED"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/globe_stand"
+                    android:contentDescription="Dining Reservation icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:breakStrategy="balanced"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Ensiklopedia Jurusan"
+                    android:textColor="#94A69E"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- 6. Peta Karier -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPetaKarier"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:background="#E9F0ED"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="12dp">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/map_maps_and_flags"
+                    android:contentDescription="Billing icon"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:breakStrategy="balanced"
+                    android:lineSpacingExtra="2dp"
+                    android:text="Peta Karier"
+                    android:textColor="#94A69E"
+                    android:textSize="16sp"
+                    android:layout_marginTop="6dp"
+                    android:fontFamily="sans-serif-medium" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </GridLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
