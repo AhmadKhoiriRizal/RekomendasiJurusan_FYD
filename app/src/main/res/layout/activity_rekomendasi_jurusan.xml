@@ -1,56 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:padding="16dp">
 
-    <LinearLayout
-        android:id="@+id/layoutContainer"
-        android:orientation="vertical"
+    <!-- Konten scrollable -->
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:text="Pilih Bidang Studi:"
-            android:textStyle="bold"
-            android:textSize="18sp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp" />
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:cardElevation="4dp"
-            app:cardCornerRadius="8dp">
-
-            <Spinner
-                android:id="@+id/spinnerBidang"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:spinnerMode="dropdown"
-                android:padding="12dp"
-                android:background="@drawable/spinner_background" />
-        </androidx.cardview.widget.CardView>
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <LinearLayout
-            android:id="@+id/questionsContainer"
+            android:id="@+id/layoutContainer"
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"/>
+            android:layout_height="wrap_content">
 
-        <Button
-            android:id="@+id/buttonProses"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Lihat Rekomendasi"
-            android:layout_marginTop="16dp"
-            android:backgroundTint="@color/colorAccent"
-            android:textColor="@android:color/white"
-            android:padding="12dp"
-            android:drawableStart="@drawable/ic_recommendation" />
-    </LinearLayout>
-</ScrollView>
+            <TextView
+                android:text="Rekomendasi Jurusan"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardElevation="4dp"
+                app:cardCornerRadius="8dp">
+
+                <Spinner
+                    android:id="@+id/spinnerBidang"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"
+                    android:padding="12dp"
+                    android:background="@drawable/spinner_background" />
+            </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/questionsContainer"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonProses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lihat Rekomendasi"
+                android:layout_marginTop="16dp"
+                android:backgroundTint="@color/colorAccent"
+                android:textColor="@android:color/white"
+                android:padding="12dp"
+                android:drawableStart="@drawable/ic_recommendation" />
+
+            <!-- TextView for displaying results -->
+            <TextView
+                android:id="@+id/textViewHasilRekomendasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rekomendasi_background"
+                android:text="Hasil rekomendasi akan ditampilkan di sini."
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:padding="16dp"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Tombol Reset di bagian bawah layar -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonReset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:text="Ulangi Jawaban"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+</LinearLayout>
